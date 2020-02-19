@@ -2,9 +2,6 @@
 
 import math
 
-x = {'death': 'on', 'grips': 'gp'}
-y = {'paramore': 'decode'}
-
 def recipe_batches(recipe, ingredients):
   # We need to compare two dictionaries, recipe and ingredients
   # We need to make sure that every key in recipe also exists in ingredients
@@ -43,7 +40,6 @@ def recipe_batches(recipe, ingredients):
     elif multiples != 0 and batches == len(ingredients):
         return multiples
 
-recipe_batches(x,y)
 if __name__ == '__main__':
   # Change the entries of these dictionaries to test 
   # your implementation with different inputs
