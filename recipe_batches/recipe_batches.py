@@ -45,6 +45,6 @@ if __name__ == '__main__':
   # your implementation with different inputs
   # recipe = { 'milk': 100, 'butter': 50, 'flour': 5, }
   # ingredients = { 'milk': 300, 'butter': 150, 'flour': 15 }
-  recipe = { 'milk': 2 }
-  ingredients = { 'milk': 200 }
+  recipe = { 'milk': 2, 'sugar': 3, 'flour': 4, 'eggs': 5 }
+  ingredients = { 'flour': 400, 'sugar': 300, 'eggs': 500, 'milk': 200, }
   print("{batches} batches can be made from the available ingredients: {ingredients}.".format(batches=recipe_batches(recipe, ingredients), ingredients=ingredients))
