@@ -48,3 +48,16 @@ if __name__ == '__main__':
   recipe = { 'milk': 2, 'sugar': 3, 'flour': 4, 'eggs': 5 }
   ingredients = { 'flour': 400, 'sugar': 300, 'eggs': 500, 'milk': 200, }
   print("{batches} batches can be made from the available ingredients: {ingredients}.".format(batches=recipe_batches(recipe, ingredients), ingredients=ingredients))
+
+  # LEGACY CODE
+
+# def recipe2(recipe, ingredients):
+#   batches = 0
+#   no_ingredients = False
+
+#   while no_ingredients = False:
+#     if recipe.keys() == ingredients.keys():
+#     else:
+#       no_ingredients = True
+#       break
+#   return batches
