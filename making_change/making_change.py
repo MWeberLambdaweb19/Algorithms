@@ -2,14 +2,28 @@
 
 import sys
 
+
 def making_change(amount, denominations):
   # We need a base case for the smallest amount and the smallest denomination
-  smallest_denomination = denominations[0]
-  if amount <= smallest_denomination:
+
+  # if amount == 0 and len(denominations) == 0:
+  #   return 0
+  if amount == 0: 
     return 1
+  elif amount < 0:
+    return 0 
+  if len(denominations) <= 0 and amount > 0:
+    return 0
+  else: 
+    value = (making_change(amount - denominations[-1], denominations) + making_change(amount, denominations[:-1]))
+    return value
+
+
+
+
   
 
-  return making_change(amount -1) + making_change(amount -2) + making_change(amount-3) + making_change(amount-4) + making_change(amount-5)
+  # return making_change(amount -1, denominations) + making_change(amount -2, denominations) + making_change(amount-3, denominations) + making_change(amount-4, denominations) + making_change(amount-5, denominations)
   # return making_change(n-1) + making_change(n-2) 
 
 
