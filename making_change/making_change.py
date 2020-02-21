@@ -15,7 +15,9 @@ def making_change(amount, denominations):
   if len(denominations) <= 0 and amount > 0:
     return 0
   else: 
+                            # 250        # 50                                                              # next after end of list, 25
     value = (making_change(amount - denominations[-1], denominations) + making_change(amount, denominations[:-1]))
+    # the next go around, recursion, ^ will be 25
     return value
 
 

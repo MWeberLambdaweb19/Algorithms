@@ -48,3 +48,18 @@ if __name__ == '__main__':
   # # return current_max_price_so_far - current_min_price_so_far
   # for i in range(len(prices) - 1):
   #   if pri
+
+  # ANOTHER SOLUTION
+
+  # def max(prices):
+  #   min = prices[0]
+  #   max = prices[1] - min
+
+  #   for i in range (1, len(prices)):
+  #     price = prices[i]
+  #     max = max(price - min, max)
+  #     min = min(price, min)
+
+  #     return max
+
+      # YOU WILL NEED TO CHANGE MAX AND MIN VARIABLES TO NOT COLLIDE WITH THE FUNCTIONS
